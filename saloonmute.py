@@ -31,6 +31,7 @@ class saloonmute(MumoModule):
 		MumoModule.__init__(self, name, manager, configuration)
 		self.murmur = manager.getMurmurModule()
 		self.action_info = manager.getUniqueAction()
+                self.action_muteAktive = manager.getUniqueAction()
 		self.watchdog = None
 
 	def connected(self):
@@ -67,9 +68,9 @@ class saloonmute(MumoModule):
 		self.log().info(user.name + " wants info on " + str(user));
 		#server.sendMessage(user.session,
                 #        "<small><pre>" + cgi.escape(str(user)) + "</pre></small>")
-                while len(varUserSessionToMute) < 0:
-                        userlist
-                        if varMuteAktive:
+                #while len(varUserSessionToMute) < 0:
+                        #userlist
+                        #if varMuteAktive:
                                 # do something
                         
 
