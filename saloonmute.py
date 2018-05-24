@@ -79,7 +79,9 @@ class saloonmute(MumoModule):
                 self.log().info(user.name +
                                 " will surpressed if some one talks in Channel");
                 varUserSessionToMute.append(user.session)
+                self.log().debug("varUserSessionToMute <= " + str(user.session));
                 varUserChannelToMute.append(user.channel)
+                self.log().debug("varUserChannelToMute <= " + str(user.channel));
                 
 	def userConnected(self, server, user, context = None):
 
